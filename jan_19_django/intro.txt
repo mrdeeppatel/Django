@@ -1,0 +1,3 @@
+Creating table from object data.
+
+table in index through ginga syntex.

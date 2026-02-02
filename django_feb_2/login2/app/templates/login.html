@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for key,val in students.items %}
+    <p> name{{val.name}}</p>
+    {% endfor %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="id" name="id"> <br>
+        <button type="submit">submit</button>
+    </form>
+    {% if result %}
+
+    <p>Found</p>
+
+    <p>Name = {{result.name}}</p>
+    <p>cgpa = {{result.cgpa}}</p>
+    {% else %}
+
+    <p>Not found</p>
+
+    {% endif %}
+
+</body>
+</html>

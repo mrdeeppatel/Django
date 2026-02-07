@@ -1,0 +1,17 @@
+python manage.py shell
+
+=================mrdeeppatel
+from db.models import Student
+
+data = Student.objects.all() 
+
+data = Student.objects.get(id=1) 
+
+for d in data:
+    print(d.sname)
+    print(d.sage)
+=================mrdeeppatel
+from django.db import connection
+
+print(connection.queries)
+
